@@ -1,0 +1,282 @@
+/* ===== HEADER ===== */
+.ps-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #f8f8f6;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.ps-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-btn {
+  background: #8cbc5a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.ps-logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2f5d3a;
+  text-decoration: none;
+}
+
+.ps-center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  max-width: 600px;
+}
+
+.category-btn {
+  background: #8cbc5a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.search-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+  border-radius: 25px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.ps-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 20px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: green;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* ===== MEGA MENU ===== */
+.mega-wrapper {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background: white;
+  display: flex;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+/* LEFT MENU */
+.mega-left {
+  width: 280px;
+  border-right: 1px solid #e5e5e5;
+  padding: 10px 0;
+}
+
+.mega-menu-title {
+  padding: 12px 20px;
+  font-weight: bold;
+  color: #4c7c2f;
+}
+
+.mega-category {
+  padding: 14px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mega-category:hover,
+.mega-category.active {
+  background: #f2f7ef;
+  color: #4c7c2f;
+  font-weight: 600;
+}
+
+.arrow {
+  font-size: 18px;
+}
+
+/* RIGHT PANEL */
+.mega-right {
+  flex: 1;
+  padding: 25px 30px;
+  overflow-y: auto;
+}
+
+.mega-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* GRID */
+.mega-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.mega-item {
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.mega-img-placeholder {
+  width: 90px;
+  height: 90px;
+  background: #f3f3f3;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.mega-item span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.mega-placeholder {
+  color: #888;
+}
+
+.mega-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #f3f3f3;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ===== RIGHT NAV ITEMS ===== */
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: #4c7c2f;
+}
+
+.nav-icon {
+  font-size: 16px;
+}
+
+.icon-wrapper {
+  position: relative;
+}
+
+.icon-count {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: #4c7c2f;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  font: inherit;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #333;
+}
+
+.logout-btn:hover {
+  color: red;
+}
+
+.search-box {
+  position: relative;
+  width: 300px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 35px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: gray;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  z-index: 1000;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.search-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: 0.2s;
+}
+
+.search-item:hover {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}

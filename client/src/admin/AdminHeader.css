@@ -1,0 +1,127 @@
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2F5D50;
+  padding: 15px 50px;
+  color: white;
+}
+
+/* LEFT SECTION */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-box {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #DDE5D5;
+}
+
+.admin-info h6 {
+  margin: 0;
+  font-weight: 600;
+  color: white;
+}
+
+.admin-info small {
+  color: #CDE3D0;
+}
+
+/* RIGHT SECTION */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* ============================= */
+/* CLEAN DROPDOWN BUTTON STYLE   */
+/* ============================= */
+
+.custom-dropdown-btn {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #EAF4EC !important;
+  font-weight: 500;
+  padding: 0;
+}
+
+/* REMOVE ALL CLICK / FOCUS EFFECTS */
+.custom-dropdown-btn:hover,
+.custom-dropdown-btn:focus,
+.custom-dropdown-btn:active,
+.custom-dropdown-btn.show {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #A3B18A !important;
+}
+
+/* Remove blue outline completely */
+.custom-dropdown-btn:focus-visible {
+  outline: none !important;
+}
+
+/* Adjust arrow spacing */
+.dropdown-toggle::after {
+  margin-left: 6px;
+  border-top-color: #EAF4EC;
+}
+
+/* ============================= */
+/* DROPDOWN MENU STYLE           */
+/* ============================= */
+
+.dropdown-menu {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 0;
+}
+
+/* Remove white hover effect */
+.dropdown-item:hover {
+  background-color: #EAF4EC;
+  color: #2F5D50;
+}
+
+/* ============================= */
+/* NORMAL NAV LINKS              */
+/* ============================= */
+
+.nav-link-custom {
+  text-decoration: none;
+  color: #EAF4EC;
+  font-weight: 500;
+}
+
+.nav-link-custom:hover {
+  color: #A3B18A;
+}
+
+/* ============================= */
+/* LOGOUT BUTTON                 */
+/* ============================= */
+
+.logout-btn {
+  border: 1px solid #EAF4EC;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #588157;
+  border: none;
+}
+
+.last-login {
+  font-size: 11px;
+  color: #CDE3D0;
+}

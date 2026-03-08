@@ -1,0 +1,280 @@
+/* ReadProduct.css */
+
+/* ========================= */
+/* Page Title */
+/* ========================= */
+.page-title {
+  color: #1B4332;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ========================= */
+/* Main Table */
+/* ========================= */
+/* .main-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.main-table thead {
+  background-color: #ffffff;
+  color: black;
+}
+
+.main-table th,
+.main-table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  border: 1px solid #B7E4C7;
+} */
+/* ===== Simple Table Header (No Color) ===== */
+.main-table thead {
+  background-color: transparent;   /* ❌ remove green background */
+}
+
+.main-table thead th {
+  color: #000;                      /* simple black text */
+  font-weight: 600;
+  background-color: #ffffff;       /* white header */
+  border-bottom: 2px solid #95D5B2; /* ✅ clean green line */
+}
+
+/* Optional: softer vertical lines */
+.main-table th,
+.main-table td {
+  border: 1px solid #B7E4C7;
+}
+.main-table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.main-table tbody tr:hover {
+  background-color: #ffffff;
+  color : black ;
+}
+
+/* ========================= */
+/* Expanded / Sub Row */
+/* ========================= */
+.sub-row {
+  background-color: #ffffff;
+}
+
+/* ========================= */
+/* Product Images */
+/* ========================= */
+.main-table td img {
+  width: 50px;
+  margin: 4px;
+  border-radius: 6px;
+  border: 1px solid #B7E4C7;
+  background-color: #ffffff;
+}
+
+/* ========================= */
+/* Action Buttons */
+/* ========================= */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;              /* 🔥 better spacing */
+  flex-wrap: wrap;
+  padding: 8px 0;
+}
+
+.action-btn {
+  min-width: 95px;        /* 🔥 equal button size */
+  padding: 8px 16px;     /* 🔥 bigger buttons */
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Edit Button */
+.btn-primary.action-btn {
+  background-color: #2D6A4F;
+  border: none;
+}
+
+.btn-primary.action-btn:hover {
+  background-color: #1B4332;
+}
+
+/* Delete Button */
+.btn-danger.action-btn {
+  background-color: #D62828;
+  border: none;
+}
+
+.btn-danger.action-btn:hover {
+  background-color: #9B2226;
+}
+
+/* ========================= */
+/* Responsive Table */
+/* ========================= */
+.table-responsive {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+.table-product-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 6px;
+  border: 1px solid #ddd;
+}
+/* ========================= */
+/* Small Devices */
+/* ========================= */
+@media (max-width: 768px) {
+  .main-table th,
+  .main-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .action-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+    min-width: 80px;
+  }
+
+  .main-table td img {
+    width: 40px;
+  }
+}
+
+/* ========================= */
+/* No Products Message */
+/* ========================= */
+.main-table tbody td.text-center {
+  font-style: italic;
+  color: #344E41;
+}
+/* ========================= */
+/* Green Aura Card Wrapper */
+/* ========================= */
+.green-card {
+  /* background: linear-gradient(135deg, #ffffff, #e9f5ec); */
+  /* border-radius: 15px; */
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================= */
+/* Page Title (Enhanced) */
+/* ========================= */
+.page-title {
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #1B4332;
+}
+
+/* ========================= */
+/* Search Bar */
+/* ========================= */
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.search-input {
+  width: 380px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid #95D5B2;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+.search-input:focus {
+  border-color: #2D6A4F;
+  box-shadow: 0 0 10px rgba(45, 106, 79, 0.3);
+}
+
+/* ========================= */
+/* Status Badge Styling */
+/* ========================= */
+/* ========================= */
+/* Status Badge Styling */
+/* ========================= */
+
+/* ========================= */
+/* Status Badge Styling */
+/* ========================= */
+
+.status-available,
+.status-out {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;   /* 🔥 PREVENT TEXT BREAK */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.status-available {
+  background-color: #2D6A4F;
+}
+
+.status-available:hover {
+  background-color: #1B4332;
+  transform: scale(1.05);
+}
+
+.status-out {
+  background-color: #D62828;
+}
+
+.status-out:hover {
+  background-color: #9B2226;
+  transform: scale(1.05);
+}
+.product-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pagination-wrapper button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2D6A4F;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination-wrapper button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

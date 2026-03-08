@@ -1,0 +1,120 @@
+/* ========== BACKGROUND WRAPPER ========== */
+.register-wrapper {
+  min-height: 100vh;
+  background: url("../../public/images/user-login.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Dark overlay for premium look */
+.register-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* ========== CARD (GLASS TRANSPARENT) ========== */
+.register-card {
+  position: relative;
+  z-index: 2;
+  width: 1000px;
+  max-width: 95%;
+  border-radius: 20px;
+  padding: 40px;
+
+  /* 🔹 Glass Effect */
+  background: rgba(255, 255, 255, 0.12);  /* transparent */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+
+  color: #ffffff; /* make text white for readability */
+}
+
+/* ========== BRAND TITLE ========== */
+.brand-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.brand-title span {
+  color: #198754;   /* Bootstrap success green */
+}
+
+/* Subtitle */
+.brand-subtitle {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* ========== FORM CONTROLS ========== */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.15rem rgba(25, 135, 84, 0.25);
+}
+
+/* ========== BUTTON (NO CUSTOM BACKGROUND) ========== */
+.register-btn {
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+/* ========== LOGIN LINK ========== */
+.login-link {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .register-card {
+    padding: 25px;
+  }
+}
+
+/* Make text visible on dark background */
+.register-card h1,
+.register-card h2,
+.register-card h3,
+.register-card label,
+.register-card p {
+  color: #ffffff;
+}
+
+/* Transparent inputs */
+.register-card .form-control,
+.register-card .form-select {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255,255,255,0.35);
+  color: #ffffff;
+}
+
+/* Placeholder */
+.register-card .form-control::placeholder {
+  color: #eeeeee;
+}
+
+/* Focus effect */
+.register-card .form-control:focus,
+.register-card .form-select:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+}

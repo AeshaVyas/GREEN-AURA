@@ -1,0 +1,136 @@
+/* ========================= */
+/* Page Title */
+/* ========================= */
+.page-title {
+  color: #1B4332;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ========================= */
+/* Main Category Table */
+/* ========================= */
+.main-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-table thead {
+  background-color: #1B4332;
+  color: white;
+}
+
+.main-table th,
+.main-table td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.main-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.main-table tbody tr:hover {
+  background-color: #F1F7F4;
+  transition: 0.3s;
+}
+
+/* ========================= */
+/* Expanded Subcategory Row */
+/* ========================= */
+.sub-row {
+  background-color: #F8FFF9;
+}
+
+/* ========================= */
+/* Subcategory Table */
+/* ========================= */
+.sub-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.sub-table thead {
+  background-color: #1B4332;
+  color: white;
+}
+
+.sub-table th,
+.sub-table td {
+  padding: 8px 12px;
+  border: 1px solid #B7E4C7;
+}
+
+/* ========================= */
+/* Subcategory Grid (Optional View) */
+/* ========================= */
+.sub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  padding: 10px 0;
+}
+
+/* Subcategory Card */
+.sub-card {
+  background-color: #E9F5EC;
+  border: 1px solid #B7E4C7;
+  border-radius: 8px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.sub-card:hover {
+  background-color: #D8F3DC;
+  transform: translateY(-3px);
+}
+
+/* Card Header */
+.sub-header {
+  margin-bottom: 8px;
+}
+
+.sub-id {
+  font-weight: bold;
+  color: #1B4332;
+  margin-right: 6px;
+}
+
+.sub-name {
+  color: #344E41;
+}
+
+/* ========================= */
+/* Action Buttons */
+/* ========================= */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 8px 0;
+}
+
+.sub-action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 0;
+}
+
+/* Button Size Upgrade */
+.action-btn {
+  
+  min-width: 95px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+}
